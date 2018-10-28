@@ -2,6 +2,7 @@
   "name": "Plugin Outlets",
   "about_url": "https://www.discoursehosting.com/",
   "license_url": "URL",
+  "component": true,
   "assets": {
   },
   "color_schemes": {
