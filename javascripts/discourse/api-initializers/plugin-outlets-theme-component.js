@@ -8,7 +8,7 @@ export default apiInitializer('0.11.1', (api) => {
   api.onPageChange(() => {
     const outlets = document.querySelectorAll('.outlet');
     const visibility = localStorage.getItem('plugin-outlet-visibility');
-    console.log(visibility);
+
     if (visibility === null) {
       localStorage.setItem('plugin-outlet-visibility', 'outlets-visible');
     } else if (visibility === 'outlets-invisible') {
