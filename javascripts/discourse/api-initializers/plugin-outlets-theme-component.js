@@ -6,19 +6,14 @@ export default apiInitializer('0.11.1', (api) => {
   let icon = iconNode('plug');
 
   api.onPageChange(() => {
-    const outlets = document.querySelectorAll('.outlet');
     const visibility = localStorage.getItem('plugin-outlet-visibility');
 
     if (visibility === null) {
-      localStorage.setItem('plugin-outlet-visibility', 'outlets-visible');
+      localStorage.setItem('plugin-outlet-visibility', 'outlets-invisible');
     } else if (visibility === 'outlets-invisible') {
-      outlets.forEach((outlet) => {
-        outlet.style.display = 'none';
-      });
+      document.body.classList.remove('plugin-outlets-visible');
     } else if (visibility === 'outlets-visible') {
-      outlets.forEach((outlet) => {
-        outlet.style.display = 'block';
-      });
+      document.body.classList.add('plugin-outlets-visible');
     }
   });
 
@@ -35,16 +30,13 @@ export default apiInitializer('0.11.1', (api) => {
   });
 
   api.attachWidgetAction('header-icons', 'click', function (e) {
-    const outlets = document.querySelectorAll('.outlet');
-
-    outlets.forEach((outlet) => {
-      if (outlet.style.display === 'none') {
-        outlet.style.display = 'block';
-        localStorage.setItem('plugin-outlet-visibility', 'outlets-visible');
-      } else {
-        outlet.style.display = 'none';
-        localStorage.setItem('plugin-outlet-visibility', 'outlets-invisible');
-      }
-    });
+    console.log('reached');
+    if (document.body.classList.contains('plugin-outlets-visible')) {
+      document.body.classList.remove('plugin-outlets-visible');
+      localStorage.setItem('plugin-outlet-visibility', 'outlets-invisible');
+    } else {
+      document.body.classList.add('plugin-outlets-visible');
+      localStorage.setItem('plugin-outlet-visibility', 'outlets-visible');
+    }
   });
 });

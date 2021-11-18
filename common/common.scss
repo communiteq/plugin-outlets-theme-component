@@ -2,5 +2,9 @@
     border: 1px solid black;
     background-color: #f00;
     color: #fff;
+    display: none;
 }
 
+body.plugin-outlets-visible .outlet {
+    display: block;
+}
