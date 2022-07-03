@@ -30,7 +30,6 @@ export default apiInitializer('0.11.1', (api) => {
   });
 
   api.attachWidgetAction('header-icons', 'click', function (e) {
-    console.log('reached');
     if (document.body.classList.contains('plugin-outlets-visible')) {
       document.body.classList.remove('plugin-outlets-visible');
       localStorage.setItem('plugin-outlet-visibility', 'outlets-invisible');
