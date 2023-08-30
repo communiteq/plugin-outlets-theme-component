@@ -1,12 +1,16 @@
-.outlet {
-    border: 1px solid #080;
-    background-color: #0c0;
-    color: #fff;
+.plugin-outlet-connector-component {
+    border: 1px solid $border_color;
+    background-color: $background_color;
+    color: $text_color;
     padding: 1px;
     text-align: center;
     display: none;
+    .entiretag {
+        font-family: "Courier New", "Courier", "Lucida Console", "Monaco", monospace;
+        font-size: 14px;
+    }
 }
 
-body.plugin-outlets-visible .outlet {
+body.plugin-outlets-visible .plugin-outlet-connector-component {
     display: block;
 }

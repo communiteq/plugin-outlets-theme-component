@@ -1,0 +1,9 @@
+text_color:
+  default: "#fff"
+  description: "Text color"
+background_color:
+  default: "#0c0"
+  description: "Background color"
+border_color:
+  default: "#080"
+  description: "Border color"  

@@ -1,0 +1,7 @@
+<div class="plugin-outlet-connector-component"{{on "click" this.toggleVisibility}}>
+  {{#if this.showName}}
+    <span class="name">{{@name}}</span>
+  {{else}}
+    <span class="entiretag">{{ yield }}</span>
+  {{/if}}
+</div>
