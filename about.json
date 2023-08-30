@@ -1,10 +1,7 @@
 {
-  "name": "Plugin Outlets",
-  "about_url": "https://www.communiteq.com/",
+  "name": "Plugin Outlet Locations",
+  "about_url": "https://meta.discourse.org/t/plugin-outlet-locations-theme-component/100673",
   "theme_version": "1.1",
   "component": true,
-  "assets": {
-  },
-  "color_schemes": {
-  }
+  "authors": "Communiteq"
 }
