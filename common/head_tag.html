@@ -1,3 +1,9 @@
+<script type="text/x-handlebars" data-template-name="/connectors/after-admin-user-fields/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="after-admin-user-fields">&lt;PluginOutlet
+      @name="after-admin-user-fields"
+      @outletArgs=\{{hash buffered=this.buffered}}
+    /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-customize-themes-list-item/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="admin-customize-themes-list-item">&lt;PluginOutlet
       @name="admin-customize-themes-list-item"
@@ -11,6 +17,12 @@
     @outletArgs=\{{hash versionCheck=this.versionCheck}}
   /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/admin-above-badge-buttons/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="admin-above-badge-buttons">&lt;PluginOutlet
+      @name="admin-above-badge-buttons"
+      @outletArgs=\{{hash badge=this.buffered}}
+    /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-menu/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="admin-menu">&lt;PluginOutlet @name="admin-menu" /&gt;</PluginOutletConnectorComponent>
 </script>
@@ -22,13 +34,28 @@
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-customize-themes-show-top/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="admin-customize-themes-show-top">&lt;PluginOutlet
-      @name="admin-customize-themes-show-top"
-      @connectorTagName="div"
+        @name="admin-customize-themes-show-top"
+        @connectorTagName="div"
+        @outletArgs=\{{hash theme=this.model}}
+      /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/admin-customize-theme-before-errors/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="admin-customize-theme-before-errors">&lt;PluginOutlet
+      @name="admin-customize-theme-before-errors"
       @outletArgs=\{{hash theme=this.model}}
     /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/admin-customize-theme-before-controls/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="admin-customize-theme-before-controls">&lt;PluginOutlet
+        @name="admin-customize-theme-before-controls"
+        @outletArgs=\{{hash theme=this.model}}
+      /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-dashboard-top/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="admin-dashboard-top">&lt;PluginOutlet @name="admin-dashboard-top" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/admin-dashboard-tabs-after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="admin-dashboard-tabs-after">&lt;PluginOutlet @name="admin-dashboard-tabs-after" /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-dashboard-bottom/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="admin-dashboard-bottom">&lt;PluginOutlet @name="admin-dashboard-bottom" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
@@ -38,41 +65,39 @@
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-dashboard-general-bottom/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="admin-dashboard-general-bottom">&lt;PluginOutlet
-      @name="admin-dashboard-general-bottom"
-      @connectorTagName="div"
-    /&gt;</PluginOutletConnectorComponent>
+    @name="admin-dashboard-general-bottom"
+    @connectorTagName="div"
+    @outletArgs=\{{hash filters=this.filters}}
+  /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-dashboard-moderation-top/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="admin-dashboard-moderation-top">&lt;PluginOutlet
-      @name="admin-dashboard-moderation-top"
-      @connectorTagName="div"
-    /&gt;</PluginOutletConnectorComponent>
+    @name="admin-dashboard-moderation-top"
+    @connectorTagName="div"
+  /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-dashboard-moderation-bottom/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="admin-dashboard-moderation-bottom">&lt;PluginOutlet
-        @name="admin-dashboard-moderation-bottom"
-        @connectorTagName="div"
-        @outletArgs=\{{hash filters=this.lastWeekfilters}}
-      /&gt;</PluginOutletConnectorComponent>
+      @name="admin-dashboard-moderation-bottom"
+      @connectorTagName="div"
+      @outletArgs=\{{hash filters=this.lastWeekFilters}}
+    /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-dashboard-security-top/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="admin-dashboard-security-top">&lt;PluginOutlet
-      @name="admin-dashboard-security-top"
-      @connectorTagName="div"
-    /&gt;</PluginOutletConnectorComponent>
+  <PluginOutletConnectorComponent @name="admin-dashboard-security-top">&lt;PluginOutlet @name="admin-dashboard-security-top" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-dashboard-security-bottom/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="admin-dashboard-security-bottom">&lt;PluginOutlet
-        @name="admin-dashboard-security-bottom"
-        @connectorTagName="div"
-      /&gt;</PluginOutletConnectorComponent>
+      @name="admin-dashboard-security-bottom"
+      @connectorTagName="div"
+    /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-below-plugins-index/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="admin-below-plugins-index">&lt;PluginOutlet
-    @name="admin-below-plugins-index"
-    @connectorTagName="div"
-    @outletArgs=\{{hash model=this.model}}
-  /&gt;</PluginOutletConnectorComponent>
+      @name="admin-below-plugins-index"
+      @connectorTagName="div"
+      @outletArgs=\{{hash model=this.model}}
+    /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/admin-user-controls-after/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="admin-user-controls-after">&lt;PluginOutlet
@@ -250,6 +275,18 @@
               @outletArgs=\{{hash model=this.composer.model}}
             /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/after-composer-category-input/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="after-composer-category-input">&lt;PluginOutlet
+                        @name="after-composer-category-input"
+                        @outletArgs=\{{hash composer=this.composer.model}}
+                      /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/after-composer-tag-input/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="after-composer-tag-input">&lt;PluginOutlet
+                      @name="after-composer-tag-input"
+                      @outletArgs=\{{hash composer=this.composer.model}}
+                    /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/after-title-and-category/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="after-title-and-category">&lt;PluginOutlet
                     @name="after-title-and-category"
@@ -296,6 +333,13 @@
                 @outletArgs=\{{hash model=this.composer.model}}
               /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/after-composer-title-input/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="after-composer-title-input">&lt;PluginOutlet
+  @name="after-composer-title-input"
+  @connectorTagName="div"
+  @outletArgs=\{{hash composer=this.composer}}
+/&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/before-composer-toggles/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="before-composer-toggles">&lt;PluginOutlet @name="before-composer-toggles" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
 </script>
@@ -313,13 +357,9 @@
         @outletArgs=\{{this.outletArgs}}
       /&gt;</PluginOutletConnectorComponent>
 </script>
-<script type="text/x-handlebars" data-template-name="/connectors/above-modal-header/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="above-modal-header">&lt;PluginOutlet @name="above-modal-header" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
-</script>
 <script type="text/x-handlebars" data-template-name="/connectors/before-create-topic-button/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="before-create-topic-button">&lt;PluginOutlet
     @name="before-create-topic-button"
-    @connectorTagName="div"
     @outletArgs=\{{hash
       canCreateTopic=this.canCreateTopic
       createTopicDisabled=this.createTopicDisabled
@@ -333,14 +373,118 @@
 <script type="text/x-handlebars" data-template-name="/connectors/after-create-topic-button/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="after-create-topic-button">&lt;PluginOutlet
     @name="after-create-topic-button"
-    @connectorTagName="div"
     @outletArgs=\{{hash
       canCreateTopic=this.canCreateTopic
       createTopicDisabled=this.createTopicDisabled
       createTopicLabel=this.createTopicLabel
       category=this.category
+      tag=this.tag
     }}
   /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/above-discovery-categories/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="above-discovery-categories">&lt;PluginOutlet
+      @name="above-discovery-categories"
+      @connectorTagName="div"
+      @outletArgs=\{{hash categories=@categories topics=@topics}}
+    /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/below-filter-input/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="below-filter-input">&lt;PluginOutlet
+        @name="below-filter-input"
+        @outletArgs=\{{hash
+          updateQueryString=this.updateQueryString
+          newQueryString=this.newQueryString
+        }}
+      /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-controls-above/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="discovery-list-controls-above">&lt;PluginOutlet
+    @name="discovery-list-controls-above"
+    @connectorTagName="div"
+    @outletArgs=\{{hash category=@model.category tag=@model.tag}}
+  /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-navigation-bar-above/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="discovery-navigation-bar-above">&lt;PluginOutlet
+    @name="discovery-navigation-bar-above"
+    @connectorTagName="div"
+    @outletArgs=\{{hash category=@model.category tag=@model.tag}}
+  /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-above/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="discovery-above">&lt;PluginOutlet
+  @name="discovery-above"
+  @connectorTagName="div"
+  @outletArgs=\{{hash category=@model.category tag=@model.tag}}
+/&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/header-list-container-bottom/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="header-list-container-bottom">&lt;PluginOutlet
+          @name="header-list-container-bottom"
+          @outletArgs=\{{hash category=@model.category tag=@model.tag}}
+        /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/before-list-area/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="before-list-area">&lt;PluginOutlet
+        @name="before-list-area"
+        @outletArgs=\{{hash category=@model.category tag=@model.tag}}
+      /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-container-top/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="discovery-list-container-top">&lt;PluginOutlet
+            @name="discovery-list-container-top"
+            @connectorTagName="span"
+            @outletArgs=\{{hash category=@model.category tag=@model.tag}}
+          /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-below/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="discovery-below">&lt;PluginOutlet
+    @name="discovery-below"
+    @connectorTagName="div"
+    @outletArgs=\{{hash category=@model.category tag=@model.tag}}
+  /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/above-category-heading/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="above-category-heading">&lt;PluginOutlet
+    @name="above-category-heading"
+    @outletArgs=\{{hash category=@category tag=@tag}}
+  /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/category-heading/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="category-heading">&lt;PluginOutlet
+        @name="category-heading"
+        @connectorTagName="div"
+        @outletArgs=\{{hash category=@category tag=@tag}}
+      /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/category-navigation/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="category-navigation">&lt;PluginOutlet
+      @name="category-navigation"
+      @connectorTagName="div"
+      @outletArgs=\{{hash category=@category tag=@tag}}
+    /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/tag-navigation/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="tag-navigation">&lt;PluginOutlet
+      @name="tag-navigation"
+      @connectorTagName="div"
+      @outletArgs=\{{hash category=@category tag=@tag}}
+    /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/before-topic-list/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="before-topic-list">&lt;PluginOutlet
+      @name="before-topic-list"
+      @connectorTagName="div"
+      @outletArgs=\{{hash category=@category tag=@tag}}
+    /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/after-topic-list/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="after-topic-list">&lt;PluginOutlet
+      @name="after-topic-list"
+      @connectorTagName="div"
+      @outletArgs=\{{hash category=@category tag=@tag}}
+    /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/category-custom-security/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="category-custom-security">&lt;PluginOutlet
@@ -360,6 +504,17 @@
     @name="category-custom-settings"
     @outletArgs=\{{hash category=this.category}}
   /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/fast-edit-footer-after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="fast-edit-footer-after">&lt;PluginOutlet
+          @name="fast-edit-footer-after"
+          @defaultGlimmer=\{{true}}
+          @outletArgs=\{{hash
+            initialValue=@initialValue
+            newValue=@newValue
+            updateValue=this.updateValueProperty
+          }}
+        /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/group-reports-nav-item/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="group-reports-nav-item">&lt;PluginOutlet
@@ -402,8 +557,30 @@
       @outletArgs=\{{hash group=this.model}}
     /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/before-header-panel/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="before-header-panel">&lt;PluginOutlet
+          @name="before-header-panel"
+          @outletArgs=\{{hash topic=this.header.topic}}
+        /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/header-topic-title-suffix/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="header-topic-title-suffix">&lt;PluginOutlet
+                  @name="header-topic-title-suffix"
+                  @outletArgs=\{{hash topic=@topic}}
+                /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/after-header/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="after-header">&lt;PluginOutlet
+        @name="after-header"
+        @outletArgs=\{{hash minimized=(globalThis.Boolean this.header.topic)}}
+      /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/above-latest-topic-list-item/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="above-latest-topic-list-item">&lt;PluginOutlet @name="above-latest-topic-list-item" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
+  <PluginOutletConnectorComponent @name="above-latest-topic-list-item">&lt;PluginOutlet
+  @name="above-latest-topic-list-item"
+  @connectorTagName="div"
+  @outletArgs=\{{hash topic=this.topic}}
+/&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/above-latest-topic-list-item-post-count/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="above-latest-topic-list-item-post-count">&lt;PluginOutlet
@@ -414,6 +591,71 @@
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/after-login-buttons/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="after-login-buttons">&lt;PluginOutlet @name="after-login-buttons" /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/create-account-before-modal-body/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="create-account-before-modal-body">&lt;PluginOutlet
+      @name="create-account-before-modal-body"
+      @connectorTagName="div"
+    /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/create-account-header-bottom/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="create-account-header-bottom">&lt;PluginOutlet
+          @name="create-account-header-bottom"
+          @outletArgs=\{{hash showLogin=(route-action "showLogin")}}
+        /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/create-account-before-password/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="create-account-before-password">&lt;PluginOutlet
+            @name="create-account-before-password"
+            @outletArgs=\{{hash
+              accountName=this.model.accountName
+              accountUsername=this.model.accountUsername
+              accountPassword=this.accountPassword
+              userFields=this.userFields
+              authOptions=this.model.authOptions
+            }}
+          /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/create-account-after-password/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="create-account-after-password">&lt;PluginOutlet
+            @name="create-account-after-password"
+            @outletArgs=\{{hash
+              accountName=this.model.accountName
+              accountUsername=this.model.accountUsername
+              accountPassword=this.accountPassword
+              userFields=this.userFields
+            }}
+          /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/create-account-after-user-fields/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="create-account-after-user-fields">&lt;PluginOutlet
+            @name="create-account-after-user-fields"
+            @outletArgs=\{{hash
+              accountName=this.model.accountName
+              accountUsername=this.model.accountUsername
+              accountPassword=this.accountPassword
+              userFields=this.userFields
+            }}
+          /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/create-account-after-modal-footer/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="create-account-after-modal-footer">&lt;PluginOutlet
+            @name="create-account-after-modal-footer"
+            @connectorTagName="div"
+          /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/create-account-after-modal-footer/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="create-account-after-modal-footer">&lt;PluginOutlet
+        @name="create-account-after-modal-footer"
+        @connectorTagName="div"
+      /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/flag-modal-bottom/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="flag-modal-bottom">&lt;PluginOutlet
+      @name="flag-modal-bottom"
+      @connectorTagName="div"
+      @outletArgs=\{{hash post=@model.flagModel}}
+    /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/revision-user-details-after/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="revision-user-details-after">&lt;PluginOutlet
@@ -428,18 +670,93 @@
       @outletArgs=\{{hash model=@model}}
     /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/login-after-modal-footer/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="login-after-modal-footer">&lt;PluginOutlet @name="login-after-modal-footer" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/login-header-bottom/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="login-header-bottom">&lt;PluginOutlet
+    @name="login-header-bottom"
+    @outletArgs=\{{hash createAccount=@createAccount}}
+  /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/login-before-modal-body/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="login-before-modal-body">&lt;PluginOutlet @name="login-before-modal-body" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/split-new-topic-title-after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="split-new-topic-title-after">&lt;PluginOutlet
+                @name="split-new-topic-title-after"
+                @outletArgs=\{{hash
+                  selectedPosts=@model.selectedPosts
+                  updateTopicName=this.updateTopicName
+                }}
+              /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/split-new-topic-category-after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="split-new-topic-category-after">&lt;PluginOutlet
+                @name="split-new-topic-category-after"
+                @outletArgs=\{{hash
+                  selectedPosts=@model.selectedPosts
+                  updateCategoryId=this.updateCategoryId
+                }}
+              /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/split-new-topic-tag-after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="split-new-topic-tag-after">&lt;PluginOutlet
+                  @name="split-new-topic-tag-after"
+                  @outletArgs=\{{hash
+                    selectedPosts=@model.selectedPosts
+                    updateTags=this.updateTags
+                    tags=this.tags
+                  }}
+                /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/share-topic-sources/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="share-topic-sources">&lt;PluginOutlet
           @name="share-topic-sources"
           @outletArgs=\{{hash topic=this.topic post=this.post}}
         /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/below-suggested-topics/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="below-suggested-topics">&lt;PluginOutlet
+          @name="below-suggested-topics"
+          @connectorTagName="div"
+          @outletArgs=\{{hash topic=@topic}}
+        /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/topic-more-content/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="topic-more-content">&lt;PluginOutlet
+      @name="topic-more-content"
+      @outletArgs=\{{hash model=@topic}}
+    /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="extra-nav-item">&lt;PluginOutlet
-  @name="extra-nav-item"
-  @connectorTagName="li"
-  @outletArgs=\{{hash category=this.category filterMode=this.filterMode}}
-/&gt;</PluginOutletConnectorComponent>
+        @name="extra-nav-item"
+        @connectorTagName="li"
+        @outletArgs=\{{hash
+          category=this.category
+          tag=this.tag
+          filterMode=this.filterMode
+        }}
+      /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/inline-extra-nav-item/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="inline-extra-nav-item">&lt;PluginOutlet
+    @name="inline-extra-nav-item"
+    @connectorTagName="li"
+    @outletArgs=\{{hash category=this.category filterMode=this.filterMode}}
+  /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="extra-nav-item">&lt;PluginOutlet
+    @name="extra-nav-item"
+    @connectorTagName="li"
+    @outletArgs=\{{hash
+      category=this.category
+      tag=this.tag
+      filterMode=this.filterMode
+    }}
+  /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/category-list-above-each-category/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="category-list-above-each-category">&lt;PluginOutlet
@@ -454,11 +771,19 @@
         @outletArgs=\{{hash category=this.category}}
       /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/quote-share-buttons-before/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="quote-share-buttons-before">&lt;PluginOutlet
+            @name="quote-share-buttons-before"
+            @connectorTagName="span"
+            @outletArgs=\{{hash data=@data}}
+          /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/quote-share-buttons-after/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="quote-share-buttons-after">&lt;PluginOutlet
-            @name="quote-share-buttons-after"
-            @connectorTagName="span"
-          /&gt;</PluginOutletConnectorComponent>
+                  @name="quote-share-buttons-after"
+                  @connectorTagName="span"
+                  @outletArgs=\{{hash data=@data}}
+                /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/quote-button-after/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="quote-button-after">&lt;PluginOutlet @name="quote-button-after" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
@@ -476,6 +801,13 @@
         @connectorTagName="div"
         @outletArgs=\{{hash model=@reviewable}}
       /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/reviewable-item-actions/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="reviewable-item-actions">&lt;PluginOutlet
+      @name="reviewable-item-actions"
+      @connectorTagName="div"
+      @outletArgs=\{{hash reviewable=this.reviewable}}
+    /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/advanced-search-options-above/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="advanced-search-options-above">&lt;PluginOutlet
@@ -497,6 +829,55 @@
       }}
     /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/search-menu-results-topic-title-suffix/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="search-menu-results-topic-title-suffix">&lt;PluginOutlet
+        @name="search-menu-results-topic-title-suffix"
+        @outletArgs=\{{hash topic=@result.topic}}
+      /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/search-menu-results-type-top/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="search-menu-results-type-top">&lt;PluginOutlet
+      @name="search-menu-results-type-top"
+      @outletArgs=\{{hash resultType=resultType}}
+    /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/search-menu-results-top/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="search-menu-results-top">&lt;PluginOutlet
+        @name="search-menu-results-top"
+        @outletArgs=\{{hash
+          closeSearchMenu=@closeSearchMenu
+          searchTerm=this.search.activeGlobalSearchTerm
+          inTopicContext=this.search.inTopicContext
+          searchTopics=@searchTopics
+        }}
+      /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/search-menu-results-bottom/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="search-menu-results-bottom">&lt;PluginOutlet
+        @name="search-menu-results-bottom"
+        @outletArgs=\{{hash
+          inTopicContext=this.search.inTopicContext
+          searchTermChanged=@searchTermChanged
+          searchTopics=@searchTopics
+          closeSearchMenu=@closeSearchMenu
+        }}
+      /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/search-menu-before-term-input/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="search-menu-before-term-input">&lt;PluginOutlet
+      @name="search-menu-before-term-input"
+      @outletArgs=\{{hash openSearchMenu=this.open}}
+    /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/search-menu-before-advanced-search/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="search-menu-before-advanced-search">&lt;PluginOutlet @name="search-menu-before-advanced-search" /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/search-results-topic-title-suffix/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="search-results-topic-title-suffix">&lt;PluginOutlet
+        @name="search-results-topic-title-suffix"
+        @outletArgs=\{{hash topic=this.post.topic}}
+      /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/full-page-search-category/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="full-page-search-category">&lt;PluginOutlet
           @name="full-page-search-category"
@@ -504,21 +885,24 @@
           @outletArgs=\{{hash post=this.post}}
         /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/after-search-result-entry/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="after-search-result-entry">&lt;PluginOutlet @name="after-search-result-entry" /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/sidebar-footer-actions/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="sidebar-footer-actions">&lt;PluginOutlet @name="sidebar-footer-actions" /&gt;</PluginOutletConnectorComponent>
 </script>
-<script type="text/x-handlebars" data-template-name="/connectors/below-suggested-topics/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="below-suggested-topics">&lt;PluginOutlet
-    @name="below-suggested-topics"
-    @connectorTagName="div"
-    @outletArgs=\{{hash topic=this.topic}}
-  /&gt;</PluginOutletConnectorComponent>
+<script type="text/x-handlebars" data-template-name="/connectors/before-sidebar-sections/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="before-sidebar-sections">&lt;PluginOutlet @name="before-sidebar-sections" /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/after-sidebar-sections/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="after-sidebar-sections">&lt;PluginOutlet @name="after-sidebar-sections" /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/tag-custom-settings/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="tag-custom-settings">&lt;PluginOutlet
-          @name="tag-custom-settings"
-          @outletArgs=\{{hash tag=this.tagInfo}}
-        /&gt;</PluginOutletConnectorComponent>
+        @name="tag-custom-settings"
+        @outletArgs=\{{hash tag=this.tagInfo}}
+        @connectorTagName="section"
+      /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/topic-category/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="topic-category">&lt;PluginOutlet
@@ -546,6 +930,12 @@
   @name="after-topic-footer-buttons"
   @outletArgs=\{{hash topic=this.topic}}
   @connectorTagName="span"
+/&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/above-topic-list-item/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="above-topic-list-item">&lt;PluginOutlet
+  @name="above-topic-list-item"
+  @outletArgs=\{{hash topic=this.topic}}
 /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/before-topic-list-body/plugin-outlet-component">
@@ -600,7 +990,7 @@
 <script type="text/x-handlebars" data-template-name="/connectors/timeline-footer-controls-after/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="timeline-footer-controls-after">&lt;PluginOutlet
       @name="timeline-footer-controls-after"
-      @outletArgs=\{{hash model=@model}}
+      @outletArgs=\{{hash model=@model fullscreen=@fullscreen}}
     /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/topic-title/plugin-outlet-component">
@@ -649,10 +1039,10 @@
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/user-card-additional-buttons/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="user-card-additional-buttons">&lt;PluginOutlet
-              @name="user-card-additional-buttons"
-              @connectorTagName="div"
-              @outletArgs=\{{hash user=this.user close=(action "close")}}
-            /&gt;</PluginOutletConnectorComponent>
+            @name="user-card-additional-buttons"
+            @connectorTagName="li"
+            @outletArgs=\{{hash user=this.user close=(action "close")}}
+          /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/user-card-additional-controls/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="user-card-additional-controls">&lt;PluginOutlet
@@ -691,17 +1081,17 @@
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/after-user-name/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="after-user-name">&lt;PluginOutlet
-        @name="after-user-name"
-        @connectorTagName="span"
-        @outletArgs=\{{hash user=this.user}}
-      /&gt;</PluginOutletConnectorComponent>
+      @name="after-user-name"
+      @connectorTagName="span"
+      @outletArgs=\{{hash user=this.user}}
+    /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/after-user-info/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="after-user-info">&lt;PluginOutlet
-    @name="after-user-info"
-    @connectorTagName="div"
-    @outletArgs=\{{hash user=this.user}}
-  /&gt;</PluginOutletConnectorComponent>
+  @name="after-user-info"
+  @connectorTagName="div"
+  @outletArgs=\{{hash user=this.user}}
+/&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/panel-body-bottom/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="panel-body-bottom">&lt;PluginOutlet
@@ -709,8 +1099,19 @@
       @outletArgs=\{{hash
         itemsCacheKey=this.itemsCacheKey
         closeUserMenu=@closeUserMenu
+        showDismiss=this.showDismiss
+        dismissButtonClick=this.dismissButtonClick
       }}
     /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/after-panel-body/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="after-panel-body">&lt;PluginOutlet
+  @name="after-panel-body"
+  @outletArgs=\{{hash closeUserMenu=@closeUserMenu}}
+/&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/menu-item-end/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="menu-item-end">&lt;PluginOutlet @name="menu-item-end" @outletArgs=\{{this.endOutletArgs}} /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/user-main-nav/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="user-main-nav">&lt;PluginOutlet
@@ -760,6 +1161,22 @@
       @connectorTagName="div"
       @outletArgs=\{{hash item=@item}}
     /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/below-wizard-checkbox/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="below-wizard-checkbox">&lt;PluginOutlet
+    @name="below-wizard-checkbox"
+    @outletArgs=\{{hash disabled=this.field.disabled}}
+  /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/below-wizard-extra-description/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="below-wizard-extra-description">&lt;PluginOutlet
+          @name="below-wizard-extra-description"
+          @outletArgs=\{{hash
+            id=@field.id
+            disabled=@field.disabled
+            value=@field.value
+          }}
+        /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/about-after-description/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="about-after-description">&lt;PluginOutlet
@@ -835,78 +1252,33 @@
 <script type="text/x-handlebars" data-template-name="/connectors/below-badges-title/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="below-badges-title">&lt;PluginOutlet @name="below-badges-title" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
 </script>
-<script type="text/x-handlebars" data-template-name="/connectors/above-discovery-categories/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="above-discovery-categories">&lt;PluginOutlet
-  @name="above-discovery-categories"
-  @connectorTagName="div"
-  @outletArgs=\{{hash
-    categories=this.model.categories
-    categoryPageStyle=this.categoryPageStyle
-    topics=this.model.topics
-  }}
-/&gt;</PluginOutletConnectorComponent>
-</script>
 <script type="text/x-handlebars" data-template-name="/connectors/below-discovery-categories/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="below-discovery-categories">&lt;PluginOutlet
-  @name="below-discovery-categories"
-  @connectorTagName="div"
-  @outletArgs=\{{hash
-    categories=this.model.categories
-    categoryPageStyle=this.categoryPageStyle
-    topics=this.model.topics
-  }}
-/&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/before-topic-list/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="before-topic-list">&lt;PluginOutlet
-      @name="before-topic-list"
+      @name="below-discovery-categories"
       @connectorTagName="div"
-      @outletArgs=\{{hash category=this.category}}
+      @outletArgs=\{{hash
+        categories=this.model.categories
+        topics=this.model.topics
+      }}
     /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/after-topic-list/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="after-topic-list">&lt;PluginOutlet
-      @name="after-topic-list"
-      @connectorTagName="div"
-      @outletArgs=\{{hash category=this.category}}
-    /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-controls-above/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="discovery-list-controls-above">&lt;PluginOutlet @name="discovery-list-controls-above" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-navigation-bar-above/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="discovery-navigation-bar-above">&lt;PluginOutlet
-    @name="discovery-navigation-bar-above"
-    @connectorTagName="div"
-  /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-above/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="discovery-above">&lt;PluginOutlet @name="discovery-above" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/header-list-container-bottom/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="header-list-container-bottom">&lt;PluginOutlet
-          @name="header-list-container-bottom"
-          @outletArgs=\{{hash category=this.category}}
-        /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/before-list-area/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="before-list-area">&lt;PluginOutlet @name="before-list-area" /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-container-top/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="discovery-list-container-top">&lt;PluginOutlet
-          @name="discovery-list-container-top"
-          @connectorTagName="span"
-          @outletArgs=\{{hash category=this.category listLoading=this.loading}}
-        /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-below/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="discovery-below">&lt;PluginOutlet @name="discovery-below" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/above-static/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="above-static">&lt;PluginOutlet @name="above-static" /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/below-static/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="below-static">&lt;PluginOutlet @name="below-static" /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/full-page-search-below-search-header/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="full-page-search-below-search-header">&lt;PluginOutlet
+      @name="full-page-search-below-search-header"
+      @connectorTagName="div"
+      @outletArgs=\{{hash
+        search=this.searchTerm
+        type=this.search_type
+        model=this.model
+        addSearchResults=this.addSearchResults
+      }}
+    /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/full-page-search-below-search-info/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="full-page-search-below-search-info">&lt;PluginOutlet
@@ -924,6 +1296,18 @@
     @connectorTagName="div"
     @outletArgs=\{{hash model=this.model}}
   /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/group-index-table-header-after-username/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="group-index-table-header-after-username">&lt;PluginOutlet
+            @name="group-index-table-header-after-username"
+            @outletArgs=\{{hash group=this.model asc=this.asc order=this.order}}
+          /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/group-index-table-row-after-username/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="group-index-table-row-after-username">&lt;PluginOutlet
+                @name="group-index-table-row-after-username"
+                @outletArgs=\{{hash member=m}}
+              /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/before-group-container/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="before-group-container">&lt;PluginOutlet
@@ -964,91 +1348,9 @@
 <script type="text/x-handlebars" data-template-name="/connectors/below-login/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="below-login">&lt;PluginOutlet @name="below-login" @outletArgs=\{{hash model=this.model}} /&gt;</PluginOutletConnectorComponent>
 </script>
-<script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="extra-nav-item">&lt;PluginOutlet
-      @name="extra-nav-item"
-      @connectorTagName="li"
-      @outletArgs=\{{hash category=this.category filterMode=this.filterMode}}
-    /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/inline-extra-nav-item/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="inline-extra-nav-item">&lt;PluginOutlet
-  @name="inline-extra-nav-item"
-  @connectorTagName="li"
-  @outletArgs=\{{hash category=this.category filterMode=this.filterMode}}
-/&gt;</PluginOutletConnectorComponent>
-</script>
 <script type="text/x-handlebars" data-template-name="/connectors/category-list-above-each-category/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="category-list-above-each-category">&lt;PluginOutlet
     @name="category-list-above-each-category"
-    @outletArgs=\{{hash category=this.category}}
-  /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/login-before-modal-body/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="login-before-modal-body">&lt;PluginOutlet @name="login-before-modal-body" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/login-after-modal-footer/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="login-after-modal-footer">&lt;PluginOutlet @name="login-after-modal-footer" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/create-account-before-modal-body/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="create-account-before-modal-body">&lt;PluginOutlet
-        @name="create-account-before-modal-body"
-        @connectorTagName="div"
-      /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/create-account-before-password/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="create-account-before-password">&lt;PluginOutlet
-                @name="create-account-before-password"
-                @outletArgs=\{{hash
-                  accountName=this.accountName
-                  accountUsername=this.accountUsername
-                  accountPassword=this.accountPassword
-                  userFields=this.userFields
-                  authOptions=this.authOptions
-                }}
-              /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/create-account-after-password/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="create-account-after-password">&lt;PluginOutlet
-                @name="create-account-after-password"
-                @outletArgs=\{{hash
-                  accountName=this.accountName
-                  accountUsername=this.accountUsername
-                  accountPassword=this.accountPassword
-                  userFields=this.userFields
-                }}
-              /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/create-account-after-modal-footer/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="create-account-after-modal-footer">&lt;PluginOutlet
-            @name="create-account-after-modal-footer"
-            @connectorTagName="div"
-          /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/flag-modal-bottom/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="flag-modal-bottom">&lt;PluginOutlet
-    @name="flag-modal-bottom"
-    @connectorTagName="div"
-    @outletArgs=\{{hash post=this.model}}
-  /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/login-before-modal-body/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="login-before-modal-body">&lt;PluginOutlet @name="login-before-modal-body" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/login-after-modal-footer/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="login-after-modal-footer">&lt;PluginOutlet @name="login-after-modal-footer" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/category-heading/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="category-heading">&lt;PluginOutlet
-      @name="category-heading"
-      @connectorTagName="div"
-      @outletArgs=\{{hash category=this.category}}
-    /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/category-navigation/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="category-navigation">&lt;PluginOutlet
-    @name="category-navigation"
-    @connectorTagName="div"
     @outletArgs=\{{hash category=this.category}}
   /&gt;</PluginOutletConnectorComponent>
 </script>
@@ -1215,47 +1517,12 @@
           }}
         /&gt;</PluginOutletConnectorComponent>
 </script>
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-controls-above/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="discovery-list-controls-above">&lt;PluginOutlet
-      @name="discovery-list-controls-above"
-      @connectorTagName="div"
-    /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-navigation-bar-above/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="discovery-navigation-bar-above">&lt;PluginOutlet
-      @name="discovery-navigation-bar-above"
-      @connectorTagName="div"
-    /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/tag-navigation/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="tag-navigation">&lt;PluginOutlet
-          @name="tag-navigation"
-          @connectorTagName="div"
-          @outletArgs=\{{hash category=this.category tag=this.tag}}
-        /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-container-top/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="discovery-list-container-top">&lt;PluginOutlet
-      @name="discovery-list-container-top"
-      @connectorTagName="div"
-      @outletArgs=\{{hash category=this.category}}
-    /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-above/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="discovery-above">&lt;PluginOutlet @name="discovery-above" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/before-list-area/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="before-list-area">&lt;PluginOutlet @name="before-list-area" /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-below/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="discovery-below">&lt;PluginOutlet @name="discovery-below" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
-</script>
 <script type="text/x-handlebars" data-template-name="/connectors/tags-below-title/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="tags-below-title">&lt;PluginOutlet
-    @name="tags-below-title"
-    @connectorTagName="div"
-    @outletArgs=\{{hash model=this.model}}
-  /&gt;</PluginOutletConnectorComponent>
+      @name="tags-below-title"
+      @connectorTagName="div"
+      @outletArgs=\{{hash model=this.model}}
+    /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/topic-above-post-stream/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="topic-above-post-stream">&lt;PluginOutlet
@@ -1287,7 +1554,11 @@
   <PluginOutletConnectorComponent @name="topic-navigation">&lt;PluginOutlet
           @name="topic-navigation"
           @connectorTagName="div"
-          @outletArgs=\{{hash topic=this.model}}
+          @outletArgs=\{{hash
+            topic=this.model
+            renderTimeline=info.renderTimeline
+            topicProgressExpanded=info.topicProgressExpanded
+          }}
         /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/before-topic-progress/plugin-outlet-component">
@@ -1300,12 +1571,26 @@
                 }}
               /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/topic-navigation-bottom/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="topic-navigation-bottom">&lt;PluginOutlet
+          @name="topic-navigation-bottom"
+          @connectorTagName="div"
+          @outletArgs=\{{hash model=this.model}}
+        /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/topic-above-posts/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="topic-above-posts">&lt;PluginOutlet
                 @name="topic-above-posts"
                 @connectorTagName="div"
                 @outletArgs=\{{hash model=this.model}}
               /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/topic-area-bottom/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="topic-area-bottom">&lt;PluginOutlet
+            @name="topic-area-bottom"
+            @connectorTagName="div"
+            @outletArgs=\{{hash model=this.model}}
+          /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/topic-above-footer-buttons/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="topic-above-footer-buttons">&lt;PluginOutlet
@@ -1320,6 +1605,12 @@
           @connectorTagName="div"
           @outletArgs=\{{hash model=this.model}}
         /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/topic-below-suggested/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="topic-below-suggested">&lt;PluginOutlet
+        @name="topic-below-suggested"
+        @outletArgs=\{{hash model=this.model}}
+      /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/above-static/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="above-static">&lt;PluginOutlet @name="above-static" /&gt;</PluginOutletConnectorComponent>
@@ -1340,11 +1631,35 @@
       @outletArgs=\{{hash user=this.user.model}}
     /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/above-user-bookmarks/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="above-user-bookmarks">&lt;PluginOutlet @name="above-user-bookmarks" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/user-messages-above-navigation/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="user-messages-above-navigation">&lt;PluginOutlet
   @name="user-messages-above-navigation"
   @outletArgs=\{{hash model=this.model}}
 /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/user-messages-controls-bottom/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="user-messages-controls-bottom">&lt;PluginOutlet
+      @name="user-messages-controls-bottom"
+      @outletArgs=\{{hash showNewPM=this.showNewPM}}
+    /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/user-notifications-above-filter/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="user-notifications-above-filter">&lt;PluginOutlet @name="user-notifications-above-filter" /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/user-notifications-after-filter/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="user-notifications-after-filter">&lt;PluginOutlet
+      @name="user-notifications-after-filter"
+      @outletArgs=\{{hash items=this.items}}
+    /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/user-notifications-list-bottom/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="user-notifications-list-bottom">&lt;PluginOutlet
+        @name="user-notifications-list-bottom"
+        @outletArgs=\{{hash controller=this}}
+      /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/user-notifications-bottom/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="user-notifications-bottom">&lt;PluginOutlet
@@ -1355,28 +1670,28 @@
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/above-user-summary-stats/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="above-user-summary-stats">&lt;PluginOutlet
-      @name="above-user-summary-stats"
-      @outletArgs=\{{hash model=this.model user=this.user}}
-    /&gt;</PluginOutletConnectorComponent>
+    @name="above-user-summary-stats"
+    @outletArgs=\{{hash model=this.model user=this.user}}
+  /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/user-summary-stat/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="user-summary-stat">&lt;PluginOutlet
-            @name="user-summary-stat"
-            @connectorTagName="li"
-            @outletArgs=\{{hash model=this.model user=this.user}}
-          /&gt;</PluginOutletConnectorComponent>
+          @name="user-summary-stat"
+          @connectorTagName="li"
+          @outletArgs=\{{hash model=this.model user=this.user}}
+        /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/below-user-summary-stats/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="below-user-summary-stats">&lt;PluginOutlet
-      @name="below-user-summary-stats"
-      @outletArgs=\{{hash model=this.model user=this.user}}
-    /&gt;</PluginOutletConnectorComponent>
+    @name="below-user-summary-stats"
+    @outletArgs=\{{hash model=this.model user=this.user}}
+  /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/after-user-summary-badges/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="after-user-summary-badges">&lt;PluginOutlet
-              @name="after-user-summary-badges"
-              @outletArgs=\{{hash model=this.model user=this.user}}
-            /&gt;</PluginOutletConnectorComponent>
+            @name="after-user-summary-badges"
+            @outletArgs=\{{hash model=this.model user=this.user}}
+          /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/above-user-profile/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="above-user-profile">&lt;PluginOutlet
@@ -1455,24 +1770,25 @@
               @outletArgs=\{{hash model=this.model}}
             /&gt;</PluginOutletConnectorComponent>
 </script>
-<script type="text/x-handlebars" data-template-name="/connectors/below-wizard-checkbox/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="below-wizard-checkbox">&lt;PluginOutlet
-    @name="below-wizard-checkbox"
-    @outletArgs=\{{hash disabled=this.field.disabled}}
-  /&gt;</PluginOutletConnectorComponent>
+<script type="text/x-handlebars" data-template-name="/connectors/after-chat-channel-username/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="after-chat-channel-username">&lt;PluginOutlet
+            @name="after-chat-channel-username"
+            @outletArgs=\{{hash user=@user}}
+            @tagName=""
+            @connectorTagName=""
+          /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/below-direct-chat-channels/plugin-outlet-component">
+  <PluginOutletConnectorComponent @name="below-direct-chat-channels">&lt;PluginOutlet
+      @name="below-direct-chat-channels"
+      @tagName=""
+      @outletArgs=\{{hash inSidebar=this.inSidebar}}
+    /&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/below-public-chat-channels/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="below-public-chat-channels">&lt;PluginOutlet
-    @name="below-public-chat-channels"
-    @tagName=""
-    @outletArgs=\{{hash inSidebar=this.inSidebar}}
-  /&gt;</PluginOutletConnectorComponent>
-</script>
-<script type="text/x-handlebars" data-template-name="/connectors/after-chat-channel-username/plugin-outlet-component">
-  <PluginOutletConnectorComponent @name="after-chat-channel-username">&lt;PluginOutlet
-                @name="after-chat-channel-username"
-                @outletArgs=\{{hash user=user}}
-                @tagName=""
-                @connectorTagName=""
-              /&gt;</PluginOutletConnectorComponent>
+      @name="below-public-chat-channels"
+      @tagName=""
+      @outletArgs=\{{hash inSidebar=this.inSidebar}}
+    /&gt;</PluginOutletConnectorComponent>
 </script>
