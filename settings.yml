@@ -13,6 +13,10 @@ wrapper_background_color:
 wrapper_border_color:
   default: "#00c"
   description: "Wrapper border color"
+admin_only:
+  default: false
+  type: bool
+  description: "Show toggle in header for admin only"
 svg_icons:
   default: 'fab-github|chevron-circle-down|chevron-circle-up'
   type: 'list'
