@@ -1,7 +1,22 @@
-<div class="plugin-outlet-connector-component"{{on "click" this.toggleVisibility}}>
+<div class="plugin-outlet-connector-component {{@type}}"{{on "click" this.toggleVisibility}}>
   {{#if this.showName}}
-    <span class="name">{{@name}}</span>
+    <span class="name">
+      {{#if (eq @type "wrapper-before")}}
+        {{d-icon "chevron-circle-down"}}
+      {{/if}}
+      {{#if (eq @type "wrapper-after")}}
+        {{d-icon "chevron-circle-up"}}
+      {{/if}}
+      {{@name}}
+      {{#if (eq @type "wrapper-before")}}
+        {{d-icon "chevron-circle-down"}}
+      {{/if}}
+      {{#if (eq @type "wrapper-after")}}
+        {{d-icon "chevron-circle-up"}}
+      {{/if}}
+      </span>
   {{else}}
     <span class="entiretag">{{ yield }}</span>
+    <a href="https://github.com/search?q=repo%3Adiscourse%2Fdiscourse%20@name=%22{{@name}}%22&type=code" target="_blank">{{d-icon "fab-github"}}</a>
   {{/if}}
 </div>

@@ -9,6 +9,19 @@
         font-family: "Courier New", "Courier", "Lucida Console", "Monaco", monospace;
         font-size: 14px;
     }
+    a .d-icon {
+        color: $text_color;
+    }
+}
+.plugin-outlet-connector-component.wrapper-before {
+    background-color: $wrapper_background_color;
+    border-color: $wrapper_border_color;
+    border-width: 2px 2px 0px 2px;
+}
+.plugin-outlet-connector-component.wrapper-after {
+    background-color: $wrapper_background_color;
+    border-color: $wrapper_border_color;
+    border-width: 0px 2px 2px 2px;
 }
 
 body.plugin-outlets-visible .plugin-outlet-connector-component {

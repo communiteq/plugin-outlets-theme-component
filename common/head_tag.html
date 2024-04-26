@@ -343,6 +343,20 @@
 <script type="text/x-handlebars" data-template-name="/connectors/before-composer-toggles/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="before-composer-toggles">&lt;PluginOutlet @name="before-composer-toggles" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/conditional-loading-spinner__before/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-before" @name="conditional-loading-spinner">&lt;PluginOutlet
+    @name="conditional-loading-spinner"
+    @defaultGlimmer=\{{true}}
+    @outletArgs=\{{hash condition=@condition size=@size}}
+  &gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/conditional-loading-spinner__after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-after" @name="conditional-loading-spinner">&lt;PluginOutlet
+    @name="conditional-loading-spinner"
+    @defaultGlimmer=\{{true}}
+    @outletArgs=\{{hash condition=@condition size=@size}}
+  &gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/after-d-editor/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="after-d-editor">&lt;PluginOutlet
           @name="after-d-editor"
@@ -445,6 +459,28 @@
     @outletArgs=\{{hash category=@model.category tag=@model.tag}}
   /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-area__before/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-before" @name="discovery-list-area">&lt;PluginOutlet
+          @name="discovery-list-area"
+          @outletArgs=\{{hash
+            category=@model.category
+            tag=@model.tag
+            model=@model
+          }}
+          @defaultGlimmer=\{{true}}
+        &gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-list-area__after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-after" @name="discovery-list-area">&lt;PluginOutlet
+          @name="discovery-list-area"
+          @outletArgs=\{{hash
+            category=@model.category
+            tag=@model.tag
+            model=@model
+          }}
+          @defaultGlimmer=\{{true}}
+        &gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/above-category-heading/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="above-category-heading">&lt;PluginOutlet
     @name="above-category-heading"
@@ -485,6 +521,28 @@
       @connectorTagName="div"
       @outletArgs=\{{hash category=@category tag=@tag}}
     /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/topic-list-bottom__before/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-before" @name="topic-list-bottom">&lt;PluginOutlet
+      @name="topic-list-bottom"
+      @outletArgs=\{{hash
+        category=@category
+        tag=@tag
+        allLoaded=this.allLoaded
+        model=@model
+      }}
+    &gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/topic-list-bottom__after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-after" @name="topic-list-bottom">&lt;PluginOutlet
+      @name="topic-list-bottom"
+      @outletArgs=\{{hash
+        category=@category
+        tag=@tag
+        allLoaded=this.allLoaded
+        model=@model
+      }}
+    &gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/category-custom-security/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="category-custom-security">&lt;PluginOutlet
@@ -562,6 +620,12 @@
           @name="before-header-panel"
           @outletArgs=\{{hash topic=this.header.topic}}
         /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/home-logo__before/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-before" @name="home-logo">&lt;PluginOutlet @name="home-logo" @outletArgs=\{{hash minimized=@minimized}}&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/home-logo__after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-after" @name="home-logo">&lt;PluginOutlet @name="home-logo" @outletArgs=\{{hash minimized=@minimized}}&gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/header-topic-title-suffix/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="header-topic-title-suffix">&lt;PluginOutlet
@@ -788,6 +852,20 @@
 <script type="text/x-handlebars" data-template-name="/connectors/quote-button-after/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="quote-button-after">&lt;PluginOutlet @name="quote-button-after" @connectorTagName="div" /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/post-text-buttons__before/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-before" @name="post-text-buttons">&lt;PluginOutlet
+          @name="post-text-buttons"
+          @defaultGlimmer=\{{true}}
+          @outletArgs=\{{hash data=@data post=this.post}}
+        &gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/post-text-buttons__after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-after" @name="post-text-buttons">&lt;PluginOutlet
+          @name="post-text-buttons"
+          @defaultGlimmer=\{{true}}
+          @outletArgs=\{{hash data=@data post=this.post}}
+        &gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/after-reviewable-post-user/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="after-reviewable-post-user">&lt;PluginOutlet
     @name="after-reviewable-post-user"
@@ -828,6 +906,40 @@
         onChangeSearchedTermField=this.onChangeSearchedTermField
       }}
     /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/search-menu-initial-options__before/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-before" @name="search-menu-initial-options">&lt;PluginOutlet
+    @name="search-menu-initial-options"
+    @outletArgs=\{{hash
+      termMatchesContextTypeKeyword=this.termMatchesContextTypeKeyword
+      contextTypeComponent=this.contextTypeComponent
+      slug=this.slug
+      suggestionKeyword=this.contextTypeKeyword
+      results=this.initialResults
+      withInLabel=this.withInLabel
+      suffix=this.suffix
+      label=this.label
+      closeSearchMenu=@closeSearchMenu
+      searchTermChanged=@searchTermChanged
+    }}
+  &gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/search-menu-initial-options__after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-after" @name="search-menu-initial-options">&lt;PluginOutlet
+    @name="search-menu-initial-options"
+    @outletArgs=\{{hash
+      termMatchesContextTypeKeyword=this.termMatchesContextTypeKeyword
+      contextTypeComponent=this.contextTypeComponent
+      slug=this.slug
+      suggestionKeyword=this.contextTypeKeyword
+      results=this.initialResults
+      withInLabel=this.withInLabel
+      suffix=this.suffix
+      label=this.label
+      closeSearchMenu=@closeSearchMenu
+      searchTermChanged=@searchTermChanged
+    }}
+  &gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/search-menu-results-topic-title-suffix/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="search-menu-results-topic-title-suffix">&lt;PluginOutlet
@@ -1110,6 +1222,18 @@
   @outletArgs=\{{hash closeUserMenu=@closeUserMenu}}
 /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/user-menu-items-list-empty-state__before/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-before" @name="user-menu-items-list-empty-state">&lt;PluginOutlet
+    @name="user-menu-items-list-empty-state"
+    @outletArgs=\{{hash model=this}}
+  &gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/user-menu-items-list-empty-state__after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-after" @name="user-menu-items-list-empty-state">&lt;PluginOutlet
+    @name="user-menu-items-list-empty-state"
+    @outletArgs=\{{hash model=this}}
+  &gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/menu-item-end/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="menu-item-end">&lt;PluginOutlet @name="menu-item-end" @outletArgs=\{{this.endOutletArgs}} /&gt;</PluginOutletConnectorComponent>
 </script>
@@ -1167,6 +1291,18 @@
     @name="below-wizard-checkbox"
     @outletArgs=\{{hash disabled=this.field.disabled}}
   /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/wizard-checkbox__before/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-before" @name="wizard-checkbox">&lt;PluginOutlet
+    @name="wizard-checkbox"
+    @outletArgs=\{{hash disabled=this.field.disabled}}
+  &gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/wizard-checkbox__after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-after" @name="wizard-checkbox">&lt;PluginOutlet
+    @name="wizard-checkbox"
+    @outletArgs=\{{hash disabled=this.field.disabled}}
+  &gt;</PluginOutletConnectorComponent>
 </script>
 <script type="text/x-handlebars" data-template-name="/connectors/below-wizard-extra-description/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="below-wizard-extra-description">&lt;PluginOutlet
@@ -1693,6 +1829,18 @@
             @outletArgs=\{{hash model=this.model user=this.user}}
           /&gt;</PluginOutletConnectorComponent>
 </script>
+<script type="text/x-handlebars" data-template-name="/connectors/user-summary-top-category-row__before/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-before" @name="user-summary-top-category-row">&lt;PluginOutlet
+                  @name="user-summary-top-category-row"
+                  @outletArgs=\{{hash category=category user=this.user}}
+                &gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/user-summary-top-category-row__after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-after" @name="user-summary-top-category-row">&lt;PluginOutlet
+                  @name="user-summary-top-category-row"
+                  @outletArgs=\{{hash category=category user=this.user}}
+                &gt;</PluginOutletConnectorComponent>
+</script>
 <script type="text/x-handlebars" data-template-name="/connectors/above-user-profile/plugin-outlet-component">
   <PluginOutletConnectorComponent @name="above-user-profile">&lt;PluginOutlet
   @name="above-user-profile"
@@ -1791,4 +1939,32 @@
       @tagName=""
       @outletArgs=\{{hash inSidebar=this.inSidebar}}
     /&gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/chat-join-channel-button__before/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-before" @name="chat-join-channel-button">&lt;PluginOutlet
+        @name="chat-join-channel-button"
+        @outletArgs=\{{hash
+          onJoinChannel=this.onJoinChannel
+          channel=@channel
+          icon=this.options.joinIcon
+          title=this.options.joinTitle
+          label=this.label
+          disabled=this.isLoading
+        }}
+        @defaultGlimmer=\{{true}}
+      &gt;</PluginOutletConnectorComponent>
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/chat-join-channel-button__after/plugin-outlet-component">
+  <PluginOutletConnectorComponent @type="wrapper-after" @name="chat-join-channel-button">&lt;PluginOutlet
+        @name="chat-join-channel-button"
+        @outletArgs=\{{hash
+          onJoinChannel=this.onJoinChannel
+          channel=@channel
+          icon=this.options.joinIcon
+          title=this.options.joinTitle
+          label=this.label
+          disabled=this.isLoading
+        }}
+        @defaultGlimmer=\{{true}}
+      &gt;</PluginOutletConnectorComponent>
 </script>

@@ -6,4 +6,14 @@ background_color:
   description: "Background color"
 border_color:
   default: "#080"
-  description: "Border color"  
+  description: "Border color"
+wrapper_background_color:
+  default: "#88f"
+  description: "Wrapper background color"
+wrapper_border_color:
+  default: "#00c"
+  description: "Wrapper border color"
+svg_icons:
+  default: 'fab-github|chevron-circle-down|chevron-circle-up'
+  type: 'list'
+  list_type: 'compact'
