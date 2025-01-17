@@ -1,6 +1,4 @@
 # Plugin-Outlet-Locations Theme-Component
 
-https://meta.discourse.org/t/plugin-outlet-locations-theme-component/100673
-
-
+This theme component is deprecated. Use the [Developer Toolbar](https://meta.discourse.org/t/introducing-discourse-developer-toolbar/346215) instead.
 
